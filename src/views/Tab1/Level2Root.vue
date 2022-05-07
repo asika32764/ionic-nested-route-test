@@ -36,7 +36,7 @@ import {
   IonTitle,
   IonToolbar
 } from '@ionic/vue';
-import { computed, defineComponent, ref } from 'vue';
+import { computed, defineComponent, onMounted, ref } from 'vue';
 import { RouterLink, useRoute } from 'vue-router';
 
 export default defineComponent({
@@ -48,6 +48,10 @@ export default defineComponent({
     const route = useRoute();
 
     const id = computed(() => route.params.lid);
+
+    onMounted(() => {
+      console.log('Level2Root mounted');
+    });
     
     return {
       id
