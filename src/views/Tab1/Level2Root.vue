@@ -10,16 +10,16 @@
     </ion-header>
     <ion-content :fullscreen="true">
       <p>
-        <router-link :to="`level2/${id}/alpha/1`">To Alpha 1</router-link>
+        <router-link :to="`/tabs/tab1/level2/${id}/alpha/1`">To Alpha 1</router-link>
       </p>
       <p>
-        <router-link :to="`level2/${id}/alpha/2`">To Alpha 2</router-link>
+        <router-link :to="`/tabs/tab1/level2/${id}/alpha/2`">To Alpha 2</router-link>
       </p>
       <p>
-        <router-link :to="`level2/${id}/beta/1`">To Beta 1</router-link>
+        <router-link :to="`/tabs/tab1/level2/${id}/beta/1`">To Beta 1</router-link>
       </p>
       <p>
-        <router-link :to="`level2/${id}/beta/2`">To Beta 2</router-link>
+        <router-link :to="`/tabs/tab1/level2/${id}/beta/2`">To Beta 2</router-link>
       </p>
     </ion-content>
   </ion-page>
