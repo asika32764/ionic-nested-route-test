@@ -17,7 +17,31 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: 'tab1',
-        component: () => import('@/views/Tab1Page.vue')
+        component: () => import('@/views/Tab1Page.vue'),
+        children: [
+          {
+            path: '',
+            component: () => import('@/views/Tab1/Tab1Root.vue'),
+          },
+          {
+            path: 'level2/:lid',
+            component: () => import('@/views/Tab1/Level2.vue'),
+            children: [
+              {
+                path: '',
+                component: () => import('@/views/Tab1/Level2Root.vue'),
+              },
+              {
+                path: 'alpha/:id',
+                component: () => import('@/views/Tab1/Level2/Level3Alpha.vue'),
+              },
+              {
+                path: 'beta/:id',
+                component: () => import('@/views/Tab1/Level2/Level3Beta.vue'),
+              },
+            ]
+          }
+        ]
       },
       {
         path: 'tab2',

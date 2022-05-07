@@ -2,11 +2,11 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>Level 2</ion-title>
+        <ion-title>Level 3 Alpha</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
-      <ion-router-outlet></ion-router-outlet>
+      <h1>Level 3 Alpha</h1>
     </ion-content>
   </ion-page>
 </template>
@@ -16,9 +16,9 @@ import { IonContent, IonHeader, IonPage, IonRouterOutlet, IonTitle, IonToolbar }
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: "Level2",
+  name: "Level3Alpha",
   components: {
-    IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonRouterOutlet
+    IonHeader, IonToolbar, IonTitle, IonContent, IonPage
   }
 });
 </script>
