@@ -14,19 +14,19 @@
       </ion-header>
 
       <p>
-        <router-link to="/tabs/tab1/level2/1">
+        <router-link to="/tabs/1/tab1/level2/1">
           Go to Level2 (1)
         </router-link>
       </p>
 
       <p>
-        <router-link to="/tabs/tab1/level2/2">
+        <router-link to="/tabs/1/tab1/level2/2">
           Go to Level2 (2)
         </router-link>
       </p>
 
       <p>
-        <router-link to="/tabs/tab1/level2/3">
+        <router-link to="/tabs/1/tab1/level2/3">
           Go to Level2 (3)
         </router-link>
       </p>
