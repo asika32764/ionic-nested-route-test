@@ -1,0 +1,7 @@
+{
+  "name": "nested",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
